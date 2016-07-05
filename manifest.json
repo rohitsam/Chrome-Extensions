@@ -1,0 +1,25 @@
+{
+  "manifest_version":2,
+
+  "name": "ClassBro",
+  "description": "Classbro notifies you before every class",
+  "version": "0.0.12",
+   
+  "browser_action": {
+    "icons": { "16": "icon16.png",
+           "48": "icon48.png",
+          "128": "icon128.png" },
+	"default_icon":"icon128.png",
+    "default_popup": "popup.html"
+  },
+  
+"background": {
+    "scripts": ["jquery.min.js","background.js"]
+  },
+
+"permissions":[
+"activeTab",
+ "storage",
+ "notifications"
+]
+ }
